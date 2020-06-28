@@ -3,13 +3,14 @@ import numpy as np
 from sklearn import preprocessing
 from KNN import *
 from SVM import *
+from logistic import *
 
 def calc_F1_score(predict_label, truth_label):
     '''
         Function: calculate F1 score 
         Param
         ---
-            predict_label, truth_label
+            predict label, truth label
         Return
         ---
             list: F1, Precision, Recall 
@@ -47,9 +48,9 @@ def main():
 
         # select feature 
         feature_name1 = ['G1','G2','G3']
-        feature_name2 = ['Medu','Fedu','failures', 'age','goout','G3']
+        # feature_name2 = ['Medu','Fedu','failures', 'age','goout','G3']
         # data = data[feature_name1]
-        data = data[feature_name2]
+        data = data[feature_name1]
         # data = data.drop(['G1', 'G2'], axis = 1)
         # G3 == 1: pass, G3 == 0: fail
         data.G3[data.G3 < 10] = -1 # 0 or -1  
@@ -86,7 +87,9 @@ def main():
         K = 9
         for i in range(10):
             # f1, p, r, _ = test_knn(train_data, train_label, test_data, test_label, K)
-            f1, p, r, _ = test_SVM(train_data, train_label, test_data, test_label, "linear")
+            # f1, p, r, _ = test_SVM(train_data, train_label, test_data, test_label, "poly")
+            f1, p, r, _ = test_logistic(train_data, train_label, test_data, test_label)
+
             F1_list.append(f1)
             p_list.append(p)
             r_list.append(r)

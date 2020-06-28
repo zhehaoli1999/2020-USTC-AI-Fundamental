@@ -899,3 +899,32 @@ Rand Coefficient= 0.7896273725639561
 ======== kmeans, K = 3, ndim = 1, thresh = 0.5 =========
 Silhouette Coefficient= 0.602087806035315
 Rand Coefficient= 0.766647622675046
+
+## logistic 
+============= data file: data/student/student-mat.csv, feature: Index(['G1', 'G2', 'G3'], dtype='object') =============
+train data size: 276, test data size: 119
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+Average F1 score: 0.8431372549019608, Precision: 0.7288135593220338, Recall: 1.0
+
+============= data file: data/student/student-por.csv, feature: Index(['G1', 'G2', 'G3'], dtype='object') =============
+train data size: 454, test data size: 195
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+======= Logistic: learning rate = 0.01 ======= 
+Average F1 score: 0.9256198347107439, Precision: 0.8615384615384617, Recall: 1.0

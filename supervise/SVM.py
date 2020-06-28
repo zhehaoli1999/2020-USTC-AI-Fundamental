@@ -13,7 +13,7 @@ def kernel_poly(n=2):
 def kernel_rbf(gamma=0.1):
     return lambda x,y: np.exp(-gamma * np.linalg.norm(x - y, 2))
 
-def kernel_sigmoid(a = 1,b = 0):
+def kernel_sigmoid(a = 1,b = 0): 
     return lambda x,y: np.tanh(a * np.dot(x,y) + b)
 
 def SVM_fit(train_data, train_label, kernel, C):
@@ -67,17 +67,18 @@ def test_SVM(train_data, train_label, test_data, test_label, kernel_type):
     '''
     predict = lambda x: 1 if np.dot(w, x) + b >= 0 else -1
 
-    C = 50
+    C = 500
     gamma = 0.001
-    print(f"======= SVM: C = {C}, gamma = {gamma}, kernel type: {kernel_type} ====== ")
+    n = 3
+    print(f"======= SVM: C = {C}, gamma = {gamma}, n = {n}, kernel type: {kernel_type} ====== ")
 
     if kernel_type == "linear":
         kernel = kernel_linear()
     elif kernel_type == "rbf":
         kernel = kernel_rbf(gamma)
     elif kernel_type == "poly":
-        kernel = kernel_poly()
-    elif kernel_type == "sigmoid":
+        kernel = kernel_poly(n)
+    elif kernel_type == "sigmoid": # problem of not positive definite!
         kernel = kernel_sigmoid()
     
     t0 = clock()    
