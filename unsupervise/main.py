@@ -13,7 +13,7 @@ def main():
     data = data.to_numpy()
 
     # PCA 
-    new_data, _, _ = PCA.PCA(data.T, 2)
+    new_data, _, _ = PCA.PCA(data.T, 5)
 
     plt.figure(1)
     plt.scatter(new_data[:,0], new_data[:,1], s = 50)

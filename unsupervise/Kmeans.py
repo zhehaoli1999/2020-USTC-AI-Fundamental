@@ -86,9 +86,6 @@ def calc_silhouette(dataset, labelset, K):
 
     return np.array(S_array).mean()
 
-def calc_accuracy(predict_label, truth_label):
-    return len(np.nonzero(predict_label - truth_label))
-
 def test_kmeans(data, label, K=3):
     print(f"======== kmeans, K = {K} =========")
 
