@@ -3,6 +3,12 @@ import matplotlib.pyplot as plt
 import main
 
 def label_data(x, centers):
+    '''
+    Label sample x according to center set.
+    Return 
+    ---
+        label in range (0, total cluster num)
+    '''
     ndim = x.shape[0]
     return np.argmin([np.dot(v,v) for v in (centers - x.reshape(1, ndim))]) # return idx in [0, K-1]
 
@@ -38,6 +44,12 @@ def kmeans_fit(train_data, K=3):
     return [label, centers] 
 
 def calc_RI(predict_label, truth_label):
+    '''
+    Calculate Rand Coefficient 
+    Return
+    ---
+        RI
+    '''
     ndata = len(predict_label)
     m = ndata * (ndata - 1) / 2  # m = a + b + c + d
     a = 0
@@ -58,9 +70,9 @@ def calc_RI(predict_label, truth_label):
 def calc_silhouette(dataset, labelset, K):
     '''
         Calculat silhouette coefficient 
-        Param
+        Return
         ---
-
+            Average S
     '''
     ndata = dataset.shape[0]
     ndim = dataset.shape[1]
@@ -87,21 +99,28 @@ def calc_silhouette(dataset, labelset, K):
     return np.array(S_array).mean()
 
 def test_kmeans(data, label, K=3):
-    print(f"======== kmeans, K = {K} =========")
+    '''
+        test kmeans. Should be called in main.py. 
+        Return
+        ---
+            S, RI, predicted label 
+    '''
 
     predict_label, centers = kmeans_fit(data, K)
-
-    plt.figure(2)
-    plt.scatter(data[:,0], data[:,1], c=predict_label, s = 50)
-    plt.scatter(centers[:, 0], centers[:, 1], c='black', s=100, alpha=0.5)
     
-    # acc = calc_accuracy(predict_label, label)
-    print( f"Silhouette Coefficient= {calc_silhouette(data, predict_label, K)}" )
-    print( f"Rand Coefficient= {calc_RI(predict_label, label )}")
+    S = calc_silhouette(data, predict_label, K)
+    RI = calc_RI(predict_label, label )
 
-    # main.calc_F1_score(predict_label, test_label)
-    plt.show()
-    return predict_label
+    print( f"Silhouette Coefficient= {S}" )
+    print( f"Rand Coefficient= {RI}")
+
+    ndim = data.shape[1]
+    if(ndim == 2):
+        plt.figure(2)
+        plt.scatter(data[:,0], data[:,1], c=predict_label, s = 50)
+        plt.scatter(centers[:, 0], centers[:, 1], c='black', s=100, alpha=0.5)
+        plt.show()
+    return [S, RI, predict_label]
 
 
    

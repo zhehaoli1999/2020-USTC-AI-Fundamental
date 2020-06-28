@@ -661,3 +661,241 @@ train data size: 454, test data size: 195
 ======= SVM: C = 50, gamma = 0.001, kernel type: rbf ====== 
 ======= SVM: C = 50, gamma = 0.001, kernel type: rbf ====== 
 Average F1 score: 0.923512747875354, Precision: 0.8670212765957446, Recall: 0.9878787878787879
+
+## 19 poly n=2 
+============= data file: data/student/student-mat.csv, feature: Index(['Medu', 'Fedu', 'failures', 'age', 'goout', 'G3'], dtype='object') =============
+train data size: 276, test data size: 119
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+Average F1 score: 0.8135593220338982, Precision: 0.7659574468085106, Recall: 0.8674698795180722
+
+============= data file: data/student/student-por.csv, feature: Index(['Medu', 'Fedu', 'failures', 'age', 'goout', 'G3'], dtype='object') =============
+train data size: 454, test data size: 195
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+Average F1 score: 0.9209039548022601, Precision: 0.8858695652173914, Recall: 0.9588235294117646
+
+## poly n = 2
+============= data file: data/student/student-mat.csv, feature: Index(['G1', 'G2', 'G3'], dtype='object') =============
+train data size: 276, test data size: 119
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+Average F1 score: 0.8652482269503545, Precision: 1.0, Recall: 0.7625
+
+============= data file: data/student/student-por.csv, feature: Index(['G1', 'G2', 'G3'], dtype='object') =============
+train data size: 454, test data size: 195
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, kernel type: poly ====== 
+Average F1 score: 0.9602446483180428, Precision: 0.9515151515151515, Recall: 0.9691358024691358
+
+## poly n = 3
+============= data file: data/student/student-mat.csv, feature: Index(['G1', 'G2', 'G3'], dtype='object') =============
+train data size: 276, test data size: 119
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+Average F1 score: 0.9347826086956521, Precision: 0.88659793814433, Recall: 0.9885057471264368
+
+============= data file: data/student/student-por.csv, feature: Index(['G1', 'G2', 'G3'], dtype='object') =============
+train data size: 454, test data size: 195
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 50, gamma = 0.001, n = 3, kernel type: poly ====== 
+Average F1 score: 0.6848249027237354, Precision: 1.0, Recall: 0.5207100591715976
+
+## poly n = 3
+============= data file: data/student/student-mat.csv, feature: Index(['G1', 'G2', 'G3'], dtype='object') =============
+train data size: 276, test data size: 119
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+Average F1 score: 0.8965517241379309, Precision: 0.8125, Recall: 1.0
+
+============= data file: data/student/student-por.csv, feature: Index(['G1', 'G2', 'G3'], dtype='object') =============
+train data size: 454, test data size: 195
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+======= SVM: C = 500, gamma = 0.001, n = 3, kernel type: poly ====== 
+Average F1 score: 0.8082191780821917, Precision: 0.887218045112782, Recall: 0.7421383647798743
+
+
+# Kmeans: ndim = 2
+
+======== kmeans, K = 3 =========
+
+Silhouette Coefficient= 0.546825505673268
+Rand Coefficient= 0.8971624452485241
+
+![](./images/Figure_1.png)
+
+![](./images/Figure_2.png)
+
+======== kmeans, K = 2 =========
+Silhouette Coefficient= 0.5132225778175341
+Rand Coefficient= 0.6832984193486955
+
+![](./images/Figure_3.png)
+
+======== kmeans, K = 4 =========
+
+Silhouette Coefficient= 0.45576938825250785
+Rand Coefficient= 0.8428235891576208
+
+![](./images/Figure_4.png)
+
+======== kmeans, K = 5 =========
+
+Silhouette Coefficient= 0.4401649077143449
+Rand Coefficient= 0.8031486066146131
+
+![](./images/Figure_5.png)
+
+
+## kmeans ndim = 6
+
+======== kmeans, K = 5, ndim = 6 =========
+Silhouette Coefficient= 0.2924934068042189
+Rand Coefficient= 0.8437123087665841
+
+======== kmeans, K = 3, ndim = 6 =========
+Silhouette Coefficient= 0.33832178242757055
+Rand Coefficient= 0.8904970481812988
+
+======== kmeans, K = 2, ndim = 6 =========
+Silhouette Coefficient= 0.3649772076914845
+Rand Coefficient= 0.682092299879388
+
+======== kmeans, K = 3, ndim = 6 =========
+Silhouette Coefficient= 0.34334002261745794
+Rand Coefficient= 0.6804418206055989
+
+======== kmeans, K = 4, ndim = 6 =========
+Silhouette Coefficient= 0.282993059611432
+Rand Coefficient= 0.87011997714721
+======== kmeans, K = 5, ndim = 6 =========
+Silhouette Coefficient= 0.26114828200122125
+Rand Coefficient= 0.8131149622294166
+
+#### again 
+======== kmeans, K = 2, ndim = 6 =========
+Silhouette Coefficient= 0.3649772076914845
+Rand Coefficient= 0.682092299879388
+======== kmeans, K = 3, ndim = 6 =========
+Silhouette Coefficient= 0.33832178242757055
+Rand Coefficient= 0.8904970481812988
+======== kmeans, K = 4, ndim = 6 =========
+Silhouette Coefficient= 0.3341219289494523
+Rand Coefficient= 0.8679616580968704
+======== kmeans, K = 5, ndim = 6 =========
+Silhouette Coefficient= 0.25233343999490626
+Rand Coefficient= 0.8353329524535009
+
+#### again 
+======== kmeans, K = 2, ndim = 6 =========
+Silhouette Coefficient= 0.3649772076914845
+Rand Coefficient= 0.682092299879388
+======== kmeans, K = 3, ndim = 6 =========
+
+Silhouette Coefficient= 0.33791853909365377
+Rand Coefficient= 0.8971624452485241
+======== kmeans, K = 4, ndim = 6 =========
+Silhouette Coefficient= 0.28605559427239124
+Rand Coefficient= 0.860344061448613
+======== kmeans, K = 5, ndim = 6 =========
+Silhouette Coefficient= 0.23139124761525426
+Rand Coefficient= 0.8332381133752301
+
+
+## kmeans ndim = 2
+======== kmeans, K = 2, ndim = 2 =========
+Silhouette Coefficient= 0.5132225778175341
+Rand Coefficient= 0.6832984193486955
+======== kmeans, K = 3, ndim = 2 =========
+/Users/bytedance/Desktop/AI/unsupervise/Kmeans.py:93: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  inter_dataset = np.array([dataset[labelset == (test_label + i) % K] for i in range(1, K)])
+Silhouette Coefficient= 0.546825505673268
+Rand Coefficient= 0.8971624452485241
+======== kmeans, K = 4, ndim = 2 =========
+Silhouette Coefficient= 0.48085983049811437
+Rand Coefficient= 0.8362216720624643
+======== kmeans, K = 5, ndim = 2 =========
+Silhouette Coefficient= 0.4401649077143449
+Rand Coefficient= 0.8031486066146131
+
+## kmeans thresh exp
+
+======== kmeans, K = 3, ndim = 6, thresh = 0.9 =========
+Silhouette Coefficient= 0.33832178242757055
+Rand Coefficient= 0.8904970481812988
+======== kmeans, K = 3, ndim = 4, thresh = 0.8 =========
+Silhouette Coefficient= 0.39067491319684006
+Rand Coefficient= 0.8904970481812988
+======== kmeans, K = 3, ndim = 2, thresh = 0.7 =========
+Silhouette Coefficient= 0.546825505673268
+Rand Coefficient= 0.8971624452485241
+======== kmeans, K = 3, ndim = 1, thresh = 0.6 =========
+Silhouette Coefficient= 0.6049687721555195
+Rand Coefficient= 0.7896273725639561
+======== kmeans, K = 3, ndim = 1, thresh = 0.5 =========
+Silhouette Coefficient= 0.602087806035315
+Rand Coefficient= 0.766647622675046
