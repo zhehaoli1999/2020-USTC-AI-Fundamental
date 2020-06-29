@@ -32,8 +32,6 @@ def SVM_fit(train_data, train_label, kernel, C):
     
     P = np.zeros((ndata,ndata))
     for i in range(ndata):
-        # a = vkernel(train_data , train_data[i]
-        # P[i] = vkernel(train_data , train_data[i])
         P[i] = np.array([kernel(train_data[j], train_data[i]) for j in range(ndata)])
     P = .5 * P * train_label.reshape((ndata, 1)) * train_label.reshape((1, ndata))   
     P = P + 1e-8 * np.eye(ndata) # Note: add a small perturbation to make this matrix positive-definite!
