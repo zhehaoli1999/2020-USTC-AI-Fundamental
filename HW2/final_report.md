@@ -39,11 +39,11 @@
 
    数学数据集：
 
-   ![cor-math](/Users/bytedance/Desktop/AI/report/images/cor-math.png)
+   ![cor-math](./images/cor-math.png)
 
    葡萄牙语数据集：
 
-   ![cor-por](/Users/bytedance/Desktop/AI/report/images/cor-por.png)
+   ![cor-por](./images/cor-por.png)
 
    可以看到：在两个数据集中，G1，G2与G3有着非常强的正相关关系。Medu，Fedu代表的父母教育程度也对孩子的最终成绩有着较大的正相关关系。有趣的是，学习时间与葡萄牙语最终成绩正相关性较强（0.25），但与数学最终成绩正相关性较弱（0.098）。除此之外，在两个数据集中，failure属性代表的学生在课堂中的失败次数与G3有着较强的负相关关系。年龄、旅行时间与G3也有一定的负相关关系。
 
@@ -51,11 +51,11 @@
 
    数学数据集：
 
-   ![math2](/Users/bytedance/Desktop/AI/report/images/math2.png)
+   ![math2](./images/math2.png)
 
    葡萄牙语数据集：
 
-   ![por2](/Users/bytedance/Desktop/AI/report/images/por2.png)
+   ![por2](./images/por2.png)
 
    从结果可以看到，葡萄牙语数据集中，学校和G3有种较强的负相关关系，higer属性代表的“是否想进入高等学校学习”与葡萄牙语G3成绩有种较强的正相关关系。除此之外，在两个数据集中，性别、住址、母亲的工作、进入学校的原因、家庭中是否有互联网都与G3有一定的相关关系。
 
@@ -96,15 +96,15 @@
       计算距离可以使用``numpy``的broadcast机制，核心代码如下：
 
       ```python
-   distance = ((testdata - dataset)**2).sum(axis = 1)
+      distance = ((testdata - dataset)**2).sum(axis = 1)
       idx = np.argsort(distance)
-   idx = idx[:K] # select the cloest K points 
+      idx = idx[:K] # select the cloest K points 
       ```
       
       投票：
       
       ```python
-   predict_label = 1 if train_label[knn_idx].sum() > K / 2 else 0
+      predict_label = 1 if train_label[knn_idx].sum() > K / 2 else 0
       ```
       
       **测试结果**
@@ -207,7 +207,7 @@
 
       我们知道，一个线性空间中的内积定义了空间中的几何度量方式，改变内积实质上将改变样本之间的相似性度量，从而使得样本的空间位置分布发生变化。这让在新特征空间中对样本进行线性划分成为可能，如下图的例子所示，图片右下角的数字为分类准确率。
 
-      ![6883294a-81c8-11e6-8950-6989e765966a](/Users/bytedance/Desktop/AI/report/images/6883294a-81c8-11e6-8950-6989e765966a.png)
+      ![6883294a-81c8-11e6-8950-6989e765966a](./images/6883294a-81c8-11e6-8950-6989e765966a.png)
 
       这里我们会有一个疑问：是否一定需要使用原问题的Lagrangian对偶形式进行SVM的求解？
 
@@ -417,11 +417,11 @@
 
       **得到的特征值的分布直方图**
 
-      ![eig](/Users/bytedance/Desktop/AI/report/images/eig.png)
+      ![eig](./images/eig.png)
 
       **压缩到2维后的数据分布**
 
-      <img src="/Users/bytedance/Desktop/AI/report/images/Figure_1.png" alt="Figure_1" style="zoom: 50%;" />
+      <img src="./images/Figure_1.png" alt="Figure_1" style="zoom: 50%;" />
 
       
 
@@ -482,9 +482,9 @@
 
       **经PCA将数据压缩至两维时分别聚类为2，3，4，5的结果：**
 
-      | ![Figure_3](/Users/bytedance/Desktop/AI/report/images/Figure_3.png) | ![Figure_2](/Users/bytedance/Desktop/AI/report/images/Figure_2.png) |
+      | ![Figure_3](./images/Figure_3.png) | ![Figure_2](./images/Figure_2.png) |
       | ------------------------------------------------------------ | ------------------------------------------------------------ |
-      | ![Figure_4](/Users/bytedance/Desktop/AI/report/images/Figure_4.png) | ![Figure_5](/Users/bytedance/Desktop/AI/report/images/Figure_5.png) |
+      | ![Figure_4](./images/Figure_4.png) | ![Figure_5](./images/Figure_5.png) |
 
       | 数据维度 | 聚类数 | 轮廓系数 | 兰德系数 |
       | -------- | ------ | -------- | -------- |
