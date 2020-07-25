@@ -33,7 +33,7 @@
 
    1. 设计了两个类`Node` 与`Astar`。类图如下：
 
-      ![image-20200517223723438](C:\Users\RichardHall\AppData\Roaming\Typora\typora-user-images\image-20200517223723438.png)
+      ![image1](./images/class1.png)
 
       A* 算法将使用 Astar 类的 `Astar_search`函数，迭代A*算法将使用 Astar 类的`Iterative_Astar_search` 与 `f_limited_search` 函数。
 
@@ -78,8 +78,7 @@
 1. **算法设计与优化方法**
 
    1. 设计了两个类``Sudoku``与``OptimizedSudoku``分别进行未优化/优化后的CSP回溯算法。类图如下。
-
-      ![image-20200517224959154](C:\Users\RichardHall\AppData\Roaming\Typora\typora-user-images\image-20200517224959154.png)
+   ![image1](./images/class2.png)
 
       
 
