@@ -1,6 +1,12 @@
 # 2020 USTC AI Foundation
 
-## HW1: To be uploaded
+## HW1:  A* & CSP  in C++
 
-## HW2:
-See report here: [final report.md](./HW2/final_report.md)
++ See requirement here: [Exp1_Requirement.pdf](./HW1/Exp1_Requirement.pdf)
+
++ See report here: [report.md](./HW1/report/report.md)
+
+## HW2: Supervised & Unsupervised Learning in Python
++ See requirement here: [Exp2_Requirement.pdf](./HW2/Exp2_Requirement.pdf)
+
++ See report here: [final report.md](./HW2/report/final_report.md)
